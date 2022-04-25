@@ -108,6 +108,10 @@ app.get("/", (req, res) => {
   res.send("Genius Car is running");
 });
 
+app.get('/hero', (req, res) => {
+  res.send("Hero end point is running")
+})
+
 app.listen(port, () => {
   console.log("Listening to", port);
 });
